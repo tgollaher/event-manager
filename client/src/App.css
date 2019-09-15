@@ -1,12 +1,38 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,300,400italic");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
 
-body, html, div, blockquote, img, label, p, h1, h2, h3, h4, h5, h6, pre, ul, ol, li, dl, dt, dd, form, a, fieldset, input, th, td {
+body,
+html,
+div,
+blockquote,
+img,
+label,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+a,
+fieldset,
+input,
+th,
+td {
   margin: 0;
   padding: 0;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -17,11 +43,11 @@ body {
 }
 
 header {
-  background: #f57011;
+  background: #2d2887;
   height: 60px;
 }
 
-header h1, header h1 a{
+header h1 a{
   display: inline-block;
   font-family: "Maven Pro";
   font-size: 28px;
@@ -63,7 +89,8 @@ header h1 a:hover {
   margin-bottom: 10px;
 }
 
-.eventList li:hover, a.active {
+.eventList li:hover,
+a.active {
   background: #f8e5ce;
 }
 
@@ -85,6 +112,10 @@ header h1 a:hover {
   padding: 0px;
 }
 
+h2 a:hover {
+  text-decoration: underline;
+}
+
 .eventForm {
   margin-top: 15px;
 }
@@ -98,7 +129,8 @@ label > strong {
   font-size: 15px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 2px 0 3px 3px;
   width: 400px;
   margin-bottom: 15px;

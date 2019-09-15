@@ -401,3 +401,300 @@ Processing by Api::EventsController#index as JSON
 Completed 200 OK in 35ms (Views: 16.0ms | ActiveRecord: 8.4ms | Allocations: 8601)
 
 
+Started GET "/api/events.json" for ::1 at 2019-09-15 10:00:53 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.0) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.0) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/api/events.json" for ::1 at 2019-09-15 10:01:29 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.0) lib/active_record/migration.rb:587:in `check_pending!'
+activerecord (6.0.0) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (17.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1750736849146080915)[0m
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20190913183324)
+  [1m[35m (41.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (268.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "email" character varying, "password" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (30.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190913183324"]]
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(1750736849146080915)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/events.json" for ::1 at 2019-09-15 10:03:39 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::EventsController#index as JSON
+  Parameters: {"event"=>{}}
+  [1m[36mEvent Load (61.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 106ms (Views: 40.8ms | ActiveRecord: 75.8ms | Allocations: 7666)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 10:05:33 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (5.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 32ms (Views: 16.0ms | ActiveRecord: 5.1ms | Allocations: 2174)
+
+
+Started GET "/api/events" for ::1 at 2019-09-15 10:05:39 -0400
+Processing by Api::EventsController#index as HTML
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 149)
+
+
+  
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  
+app/controllers/api/events_controller.rb:5:in `index'
+Started GET "/api/events.json" for ::1 at 2019-09-15 10:07:43 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (10.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 182ms (Views: 90.1ms | ActiveRecord: 10.7ms | Allocations: 2219)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 10:10:18 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 44ms (Views: 29.1ms | ActiveRecord: 1.7ms | Allocations: 2155)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 11:12:54 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (2.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 57ms (Views: 44.0ms | ActiveRecord: 2.3ms | Allocations: 2163)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 11:20:08 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 13.8ms | ActiveRecord: 1.3ms | Allocations: 2279)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 11:27:14 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 21ms (Views: 14.9ms | ActiveRecord: 1.3ms | Allocations: 2264)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 11:27:20 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.6ms | Allocations: 2155)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 11:46:09 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (3.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 67ms (Views: 56.4ms | ActiveRecord: 3.9ms | Allocations: 2264)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 12:36:45 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (301.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 403ms (Views: 93.9ms | ActiveRecord: 301.7ms | Allocations: 2264)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 12:37:40 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 12.5ms | ActiveRecord: 1.5ms | Allocations: 2155)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 12:38:18 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (3.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 26ms (Views: 14.3ms | ActiveRecord: 3.3ms | Allocations: 2155)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 12:38:38 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (3.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 396ms (Views: 391.7ms | ActiveRecord: 3.4ms | Allocations: 2183)
+
+
+Started DELETE "/api/events/1.json" for ::1 at 2019-09-15 12:39:02 -0400
+Processing by Api::EventsController#destroy as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mEvent Load (51.1ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17:in `destroy'
+  [1m[35m (81.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:17:in `destroy'
+  [1m[36mEvent Destroy (15.4ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/api/events_controller.rb:17:in `destroy'
+  [1m[35m (3.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/events_controller.rb:17:in `destroy'
+Completed 204 No Content in 445ms (ActiveRecord: 151.9ms | Allocations: 4388)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 14:54:03 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (32.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 125ms (Views: 78.5ms | ActiveRecord: 32.3ms | Allocations: 2082)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 15:17:40 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (43.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 100ms (Views: 50.5ms | ActiveRecord: 43.9ms | Allocations: 2082)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 15:24:12 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (62.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 111ms (Views: 44.3ms | ActiveRecord: 62.0ms | Allocations: 2082)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 15:28:29 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 53ms (Views: 42.4ms | ActiveRecord: 1.6ms | Allocations: 1973)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 15:28:48 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 1.4ms | Allocations: 1973)
+
+
+Started POST "/api/events.json" for ::1 at 2019-09-15 15:29:17 -0400
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event_type"=>"Interviw", "event_date"=>"2019-09-09", "title"=>"The best one", "speaker"=>"john mayer", "host"=>"bob", "published"=>true, "event"=>{"event_type"=>"Interviw", "event_date"=>"2019-09-09", "title"=>"The best one", "speaker"=>"john mayer", "host"=>"bob", "published"=>true}}
+  [1m[35m (29.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:13:in `create'
+  [1m[36mEvent Create (153.2ms)[0m  [1m[32mINSERT INTO "events" ("event_type", "event_date", "title", "speaker", "host", "published", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["event_type", "Interviw"], ["event_date", "2019-09-09"], ["title", "The best one"], ["speaker", "john mayer"], ["host", "bob"], ["published", true], ["created_at", "2019-09-15 19:29:17.526647"], ["updated_at", "2019-09-15 19:29:17.526647"]]
+  ↳ app/controllers/api/events_controller.rb:13:in `create'
+  [1m[35m (43.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/events_controller.rb:13:in `create'
+Completed 201 Created in 701ms (Views: 312.5ms | ActiveRecord: 226.4ms | Allocations: 4784)
+
+
+Started DELETE "/api/events/8.json" for ::1 at 2019-09-15 15:29:31 -0400
+Processing by Api::EventsController#destroy as JSON
+  Parameters: {"id"=>"8"}
+  [1m[36mEvent Load (27.9ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:17:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:17:in `destroy'
+  [1m[36mEvent Destroy (3.8ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/api/events_controller.rb:17:in `destroy'
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/events_controller.rb:17:in `destroy'
+Completed 204 No Content in 87ms (ActiveRecord: 34.9ms | Allocations: 2287)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 15:48:14 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 31ms (Views: 25.2ms | ActiveRecord: 1.3ms | Allocations: 2082)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 16:00:02 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 7.7ms | ActiveRecord: 1.6ms | Allocations: 2087)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 16:01:40 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (25.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 60ms (Views: 26.6ms | ActiveRecord: 25.5ms | Allocations: 1973)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-15 16:06:21 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (29.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:5:in `index'
+Completed 200 OK in 72ms (Views: 33.1ms | ActiveRecord: 29.7ms | Allocations: 1973)
+
+
