@@ -21,7 +21,7 @@ class EventForm extends React.Component {
   }
 
   componentDidMount() {
-    /* eslint-disable no-new */
+    
     new Pikaday({
       field: this.dateInput.current,
       toString: date => formatDate(date),

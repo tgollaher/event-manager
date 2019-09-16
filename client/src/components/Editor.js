@@ -47,22 +47,7 @@ class Editor extends React.Component {
         throw error
       });
   }
-  updateEvent(updatedEvent) {
-    axios
-      .put(`/api/events/${updatedEvent.id}.json`, updatedEvent)
-      .then(() => {
-        alert('Event updated');
-        const { events } = this.state;
-        const idx = events.findIndex(event => event.id === updatedEvent.id);
-        events[idx] = updatedEvent;
-        const { history } = this.props;
-        history.push(`/events/${updatedEvent.id}`);
-        this.setState({ events });
-      })
-      .catch((error) => {
-        throw error;
-      });
-  }
+  
 
   deleteEvent(eventId) {
     const sure = window.confirm('Are you sure?');
@@ -83,6 +68,23 @@ class Editor extends React.Component {
           throw error;
         });
     }
+  }
+
+  updateEvent(updatedEvent) {
+    axios
+      .put(`http://localhost:3000/api/events/${updatedEvent.id}.json`, updatedEvent)
+      .then(() => {
+        alert('Event updated');
+        const { events } = this.state;
+        const idx = events.findIndex(event => event.id === updatedEvent.id);
+        events[idx] = updatedEvent;
+        const { history } = this.props;
+        history.push(`/events/${updatedEvent.id}`);
+        this.setState({ events });
+      })
+      .catch((error) => {
+        throw error;
+      });
   }
 
   render() {

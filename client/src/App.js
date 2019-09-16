@@ -4,7 +4,7 @@ import Editor from './components/Editor';
 import './App.css';
 
 const App = () => (
-  <div>
+  <div className="main">
     <Route path="/events/:id?" component={Editor} />
   </div>
 );

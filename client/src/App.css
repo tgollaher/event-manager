@@ -1,35 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,300,400italic");
-@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700");
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
 
-body,
-html,
-div,
-blockquote,
-img,
-label,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-ul,
-ol,
-li,
-dl,
-dt,
-dd,
-form,
-a,
-fieldset,
-input,
-th,
-td {
+
+ h1 {
   margin: 0;
   padding: 0;
-}
+} 
 
 ul,
 ol {
@@ -38,8 +14,9 @@ ol {
 
 body {
   font-family: Roboto;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 29px;
+  
 }
 
 header {
@@ -49,12 +26,13 @@ header {
 
 header h1 a{
   display: inline-block;
-  font-family: "Maven Pro";
+  font-family: "Saira Stencil One";
   font-size: 28px;
   font-weight: 500;
   color: white;
   padding: 14px 5%;
   text-decoration: none;
+  margin: 0
 }
 
 header h1 a:hover {
@@ -64,7 +42,7 @@ header h1 a:hover {
 .grid {
   display: grid;
   grid-gap: 50px;
-  grid-template-columns: 25% auto;
+  grid-template-columns: 40% auto;
   margin: 25px auto;
   width: 90%;
   height: calc(100vh - 145px);
