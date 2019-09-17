@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseUrl = 'http://localhost:3000'
+const baseUrl = 'https://hack-a-manager.herokuapp.com/'
 
 const api = axios.create({
   baseURL: baseUrl
@@ -23,7 +23,7 @@ export const loginUser = async (loginData) => {
     const token = localStorage.getItem('authToken');
     if (token) {
       api.defaults.headers.common.authorization = `Bearer ${token}`
-      const resp = await api.get('http://localhost:3000/users/verify');
+      const resp = await api.get('https://hack-a-manager.herokuapp.com/users/verify');
       return resp.data
     }
     return false;

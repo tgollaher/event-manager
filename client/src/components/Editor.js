@@ -24,7 +24,7 @@ class Editor extends React.Component {
 
   componentDidMount() {
     axios
-      .get('http://localhost:3000/api/events.json')
+      .get('https://hack-a-manager.herokuapp.com/api/events.json')
       .then(response => this.setState({ events: response.data }))
       .catch((error) => {
         throw error
@@ -33,7 +33,7 @@ class Editor extends React.Component {
 
   addEvent(newEvent) {
     axios
-      .post('http://localhost:3000/api/events.json', newEvent)
+      .post('https://hack-a-manager.herokuapp.com/api/events.json', newEvent)
       .then((response) => {
         alert('Event Added!');
         const savedEvent = response.data;
@@ -55,7 +55,7 @@ class Editor extends React.Component {
 
   updateEvent(updatedEvent) {
     axios
-      .put(`http://localhost:3000/api/events/${updatedEvent.id}.json`, updatedEvent)
+      .put(`https://hack-a-manager.herokuapp.com/api/events/${updatedEvent.id}.json`, updatedEvent)
       .then(() => {
         alert('Event updated');
         const { events } = this.state;
@@ -74,7 +74,7 @@ class Editor extends React.Component {
     const sure = window.confirm('Are you sure?');
     if (sure) {
       axios
-        .delete(`http://localhost:3000/api/events/${eventId}.json`)
+        .delete(`https://hack-a-manager.herokuapp.com/api/events/${eventId}.json`)
         .then((response) => {
           if (response.status === 204) {
             alert('Event deleted');
