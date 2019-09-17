@@ -7,7 +7,7 @@ const api = axios.create({
 
 export const loginUser = async (loginData) => {
     const resp = await api.post('/auth/login', loginData)
-    console.log(resp)
+    
     localStorage.setItem('authToken', resp.data.token);
     localStorage.setItem('userId', resp.data.user_id)
     api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`
@@ -15,7 +15,7 @@ export const loginUser = async (loginData) => {
   }
   
   export const registerUser = async (registerData) => {
-    const resp = await api.post('/users/', { user: registerData })
+    const resp = await api.post('/users', { user: registerData })
     return resp.data
   }
   
@@ -23,7 +23,7 @@ export const loginUser = async (loginData) => {
     const token = localStorage.getItem('authToken');
     if (token) {
       api.defaults.headers.common.authorization = `Bearer ${token}`
-      const resp = await api.get('/users/verify');
+      const resp = await api.get('http://localhost:3000/users/verify');
       return resp.data
     }
     return false;

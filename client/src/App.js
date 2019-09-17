@@ -1,22 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import Editor from './components/Editor';
 import { withRouter } from 'react-router';
-import decode from 'jwt-decode';
 import Login from './components/Login'
 import Register from './components/Register'
 import './App.css';
+
 
 import {
   loginUser,
   registerUser,
   verifyUser
 } from './services/api-helper'
-import EventList from './components/EventList';
 
 
-class App extends React.Component {
+
+class App extends Component {
   state = {
+    
     currentUser: null,
     authFormData: {
       username: "",
@@ -33,18 +34,18 @@ class App extends React.Component {
   }
 
   handleLogin = async () => {
-    const id = await localStorage.getItem('userId')
+    await localStorage.getItem('userId')
     const userData = await loginUser(this.state.authFormData);
     this.setState({
       currentUser: userData
     })
-    this.props.history.push(`/events/`)
+    this.props.history.push('/events')
   }
 
   handleRegister = async (e) => {
     e.preventDefault();
     await registerUser(this.state.authFormData);
-    // await this.props.history.push(`/events/${id}`)
+    await this.props.history.push('/events')
   }
 
   handleLogout = async () => {
@@ -77,7 +78,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div>
+        {/* <div>
             {this.state.currentUser
               ?
               <>
@@ -87,7 +88,7 @@ class App extends React.Component {
               :
               <button onClick={this.handleLoginButton}>Login / Register</button>
             }
-          </div>
+          </div> */}
         <Route exact path="/" render={() => (
           <Login
             handleLogin={this.handleLogin}
@@ -99,7 +100,7 @@ class App extends React.Component {
             handleChange={this.authHandleChange}
             formData={this.state.authFormData} />)} />
         <Route exact path="/events/:id" component={Editor} />
-        <Route exact path="/events" component={EventList} />
+        <Route exact path="/events" component={Editor} />
 
       </div>
     );

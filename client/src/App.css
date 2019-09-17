@@ -12,15 +12,32 @@ ol {
   list-style: none;
 }
 
+.login-header {
+  font-family: "Saira Stencil One";
+  font-size: 30px;
+
+}
+
+.register-header {
+  font-family: "Saira Stencil One";
+  font-size: 30px;
+}
+
 body {
   font-family: Roboto;
   font-size: 18px;
   line-height: 29px;
+  background-image: url('./imgs/glasses-comp.jpg');
+  background-repeat:  no-repeat;
+  background-size: cover;
+
+  
+
   
 }
 
 header {
-  background: #2d2887;
+  background: #dc630d;
   height: 60px;
 }
 
@@ -196,4 +213,8 @@ input.search {
   width: 92%;
   margin: 15px 2px;
   padding: 4px 0 6px 6px;
+}
+.auth-container {
+  margin: 20%;
+  
 }
