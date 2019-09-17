@@ -1,5 +1,7 @@
 class Api::EventsController < ApplicationController
-    respond_to :json
+  # before_action :index, only: %i[index show create destroy update]
+  # before_action :authorize_request, except: %i[index show]
+  respond_to :json
   
     def index
       respond_with Event.order(event_date: :DESC)
