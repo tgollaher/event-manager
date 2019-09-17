@@ -1,9 +1,11 @@
 import React from 'react';
-
+import Header from './Header';
 
 const Register = (props) => {
 
   return (
+    <div>
+      <Header />
     <div className="auth-container">
       <h2 className="register-header">Register</h2>
       <hr />
@@ -18,6 +20,7 @@ const Register = (props) => {
         <button>Register</button>
       </form>
     </div>
+  </div>
   );
 }
 

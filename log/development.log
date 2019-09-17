@@ -8184,3 +8184,154 @@ Processing by Api::EventsController#index as JSON
 Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.7ms | Allocations: 1609)
 
 
+Started GET "/users/verify" for ::1 at 2019-09-17 09:41:12 -0400
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 233ms (Views: 5.9ms | ActiveRecord: 181.4ms | Allocations: 1931)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:41:30 -0400
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:41:30 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 253)
+
+
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (124.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 187ms (Views: 43.0ms | ActiveRecord: 136.5ms | Allocations: 7829)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:44:07 -0400
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:44:07 -0400
+Processing by UsersController#verify as HTML
+Processing by Api::EventsController#index as JSON
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 23ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 523)
+
+
+  [1m[36mEvent Load (33.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 103ms (Views: 30.4ms | ActiveRecord: 33.7ms | Allocations: 2043)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:44:14 -0400
+Started GET "/users/verify" for ::1 at 2019-09-17 09:44:14 -0400
+Processing by Api::EventsController#index as JSON
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+  [1m[36mEvent Load (7.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 13ms (Views: 4.2ms | ActiveRecord: 7.8ms | Allocations: 2383)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:47:00 -0400
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:47:00 -0400
+Processing by UsersController#verify as HTML
+Processing by Api::EventsController#index as JSON
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 29ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 522)
+
+
+  [1m[36mEvent Load (156.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 206ms (Views: 25.8ms | ActiveRecord: 156.2ms | Allocations: 2099)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:47:05 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:48:21 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 13ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:48:31 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:48:44 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:51:24 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:53:33 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 16ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started POST "/users" for ::1 at 2019-09-17 09:54:08 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"isso", "email"=>"isso@mail.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (3.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "isso"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "isso@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (43.0ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "isso"], ["email", "isso@mail.com"], ["password_digest", "$2a$12$f4sglUJVHzGcsjo6C/4aoenU7Tgeufb31Q4EulJK8qVLXkuiLzgzq"], ["created_at", "2019-09-17 13:54:08.604245"], ["updated_at", "2019-09-17 13:54:08.604245"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (44.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 201 Created in 444ms (Views: 6.6ms | ActiveRecord: 92.3ms | Allocations: 8192)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:54:08 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (8.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 21ms (Views: 11.2ms | ActiveRecord: 8.5ms | Allocations: 1611)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:54:17 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started POST "/auth/login" for ::1 at 2019-09-17 09:54:25 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"isso", "email"=>"", "password"=>"[FILTERED]", "authentication"=>{"username"=>"isso", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "isso"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:5:in `login'
+Completed 200 OK in 341ms (Views: 0.3ms | ActiveRecord: 1.2ms | Allocations: 991)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:54:26 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 1.6ms | Allocations: 1609)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:55:29 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:58:42 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 251)
+
+

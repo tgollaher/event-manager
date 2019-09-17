@@ -78,17 +78,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* <div>
-            {this.state.currentUser
-              ?
-              <>
-                <p>{this.state.currentUser.username}</p>
-                <button onClick={this.handleLogout}>Logout</button>
-              </>
-              :
-              <button onClick={this.handleLoginButton}>Login / Register</button>
-            }
-          </div> */}
+      
         <Route exact path="/" render={() => (
           <Login
             handleLogin={this.handleLogin}
