@@ -7549,3 +7549,638 @@ Processing by Api::EventsController#index as JSON
 Completed 200 OK in 21ms (Views: 14.0ms | ActiveRecord: 4.2ms | Allocations: 1609)
 
 
+Started GET "/users/verify" for ::1 at 2019-09-17 03:26:15 -0400
+  [1m[35m (76.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 89ms (Views: 4.0ms | ActiveRecord: 48.9ms | Allocations: 1994)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 03:26:28 -0400
+Started GET "/api/events.json" for ::1 at 2019-09-17 03:26:28 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (61.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 224ms (Views: 106.1ms | ActiveRecord: 88.7ms | Allocations: 7737)
+
+
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 253)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 03:26:34 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (2.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 2.1ms | Allocations: 1737)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 03:26:42 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (5.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 11ms (Views: 5.8ms | ActiveRecord: 5.1ms | Allocations: 1628)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 03:26:51 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.7ms | Allocations: 1611)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 03:34:19 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 9ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 03:34:27 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 03:34:44 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 03:35:01 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (4.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 21ms (Views: 11.4ms | ActiveRecord: 4.0ms | Allocations: 1718)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 03:35:15 -0400
+Started GET "/users/verify" for ::1 at 2019-09-17 03:35:15 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 2.0ms | Allocations: 1609)
+
+
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 03:35:27 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (2.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 2.7ms | Allocations: 1726)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 03:39:21 -0400
+Started GET "/users/verify" for ::1 at 2019-09-17 03:39:21 -0400
+Processing by Api::EventsController#index as JSON
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+  [1m[36mEvent Load (27.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 72ms (Views: 30.1ms | ActiveRecord: 27.7ms | Allocations: 2064)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 03:40:04 -0400
+Started GET "/api/events.json" for ::1 at 2019-09-17 03:40:04 -0400
+Processing by Api::EventsController#index as JSON
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+  [1m[36mEvent Load (17.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 25ms (Views: 6.6ms | ActiveRecord: 17.5ms | Allocations: 2060)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 03:45:08 -0400
+Started GET "/api/events.json" for ::1 at 2019-09-17 03:45:08 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 17ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 296ms (Views: 289.8ms | ActiveRecord: 1.3ms | Allocations: 1632)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 03:47:11 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 33ms (Views: 23.3ms | ActiveRecord: 1.6ms | Allocations: 1613)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 03:47:17 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 1.7ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 03:55:43 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (33.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 70ms (Views: 32.2ms | ActiveRecord: 33.7ms | Allocations: 1719)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 08:58:16 -0400
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 79ms (Views: 3.2ms | ActiveRecord: 54.8ms | Allocations: 1930)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 08:58:29 -0400
+Started GET "/api/events.json" for ::1 at 2019-09-17 08:58:29 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 253)
+
+
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (93.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 155ms (Views: 33.7ms | ActiveRecord: 103.5ms | Allocations: 7829)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:00:49 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (5.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 31ms (Views: 19.5ms | ActiveRecord: 5.0ms | Allocations: 1628)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:01:41 -0400
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:01:41 -0400
+Processing by Api::EventsController#index as JSON
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 6ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 253)
+
+
+  [1m[36mEvent Load (227.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 298ms (Views: 53.9ms | ActiveRecord: 227.8ms | Allocations: 2478)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:01:42 -0400
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:01:42 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (51.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 58ms (Views: 6.0ms | ActiveRecord: 51.0ms | Allocations: 1769)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:10:11 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 8ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 248)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:19:10 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 7ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:19:14 -0400
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:19:14 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 463)
+
+
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (20.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 60ms (Views: 31.6ms | ActiveRecord: 20.4ms | Allocations: 1718)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:20:20 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 11ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started POST "/users" for ::1 at 2019-09-17 09:21:03 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"destinc", "email"=>"destin@destin.com", "password"=>"[FILTERED]"}}
+  [1m[35m (44.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (100.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "destinc"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "destin@destin.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (64.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "destinc"], ["email", "destin@destin.com"], ["password_digest", "$2a$12$mofHYhTUbC246msxFJsPKuE1p/75gThbRplJ/1aVZEIQyhut0AHSe"], ["created_at", "2019-09-17 13:21:04.419473"], ["updated_at", "2019-09-17 13:21:04.419473"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (28.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 201 Created in 717ms (Views: 2.8ms | ActiveRecord: 237.5ms | Allocations: 8216)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:21:04 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.9ms | Allocations: 1615)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:21:20 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 1.2ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:21:23 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (2.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 2.4ms | Allocations: 1621)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:21:41 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (0.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.9ms | Allocations: 1609)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:22:02 -0400
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:22:02 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 461)
+
+
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (9.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 15ms (Views: 4.7ms | ActiveRecord: 9.5ms | Allocations: 1718)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:22:06 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 11ms (Views: 7.2ms | ActiveRecord: 0.7ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:22:08 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.6ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:22:42 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (3.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 32ms (Views: 23.3ms | ActiveRecord: 3.8ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:23:08 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (4.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 17ms (Views: 8.8ms | ActiveRecord: 4.1ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:23:39 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (0.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.6ms | Allocations: 1609)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:27:57 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 14ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:28:05 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 253)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:28:05 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (9.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 29ms (Views: 15.1ms | ActiveRecord: 9.7ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:28:07 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 1.1ms | Allocations: 1609)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:29:21 -0400
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:29:21 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (8.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 46ms (Views: 30.0ms | ActiveRecord: 8.2ms | Allocations: 1609)
+
+
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 4ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:29:25 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (7.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 18ms (Views: 9.1ms | ActiveRecord: 7.7ms | Allocations: 1718)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:29:26 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (10.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 18ms (Views: 7.0ms | ActiveRecord: 10.3ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:29:28 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (4.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 12ms (Views: 6.4ms | ActiveRecord: 4.0ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:29:29 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.1ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 1.1ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:29:32 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (3.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 3.4ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:29:34 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (6.2ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 14ms (Views: 7.8ms | ActiveRecord: 6.2ms | Allocations: 1609)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:29:41 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:29:55 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started POST "/users" for ::1 at 2019-09-17 09:30:08 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (3.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 422 Unprocessable Entity in 131ms (Views: 0.3ms | ActiveRecord: 6.2ms | Allocations: 6323)
+
+
+Started POST "/users" for ::1 at 2019-09-17 09:30:11 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (1.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 422 Unprocessable Entity in 20ms (Views: 0.4ms | ActiveRecord: 3.2ms | Allocations: 4965)
+
+
+Started POST "/users" for ::1 at 2019-09-17 09:30:11 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 422 Unprocessable Entity in 15ms (Views: 1.0ms | ActiveRecord: 2.7ms | Allocations: 4965)
+
+
+Started POST "/users" for ::1 at 2019-09-17 09:30:28 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"bobby", "email"=>"bobby@mail.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "bobby"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "bobby@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "bobby"], ["email", "bobby@mail.com"], ["password_digest", "$2a$12$njPEKFPx1r5EEp6xwUJ25.1e/1cb2lBDkz72bODWLQrxcrMDTmik2"], ["created_at", "2019-09-17 13:30:29.135288"], ["updated_at", "2019-09-17 13:30:29.135288"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (43.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 201 Created in 352ms (Views: 2.4ms | ActiveRecord: 45.6ms | Allocations: 4342)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:30:29 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 1.4ms | Allocations: 1613)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:30:30 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (11.9ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 17ms (Views: 4.6ms | ActiveRecord: 11.9ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:30:36 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.7ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:30:43 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (2.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 2.0ms | Allocations: 1609)
+
+
+Started GET "/users/verify" for ::1 at 2019-09-17 09:31:33 -0400
+Processing by UsersController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 247)
+
+
+Started POST "/users" for ::1 at 2019-09-17 09:32:01 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"conorgar", "email"=>"conorgar@mail.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "conorgar"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "conorgar@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (36.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "conorgar"], ["email", "conorgar@mail.com"], ["password_digest", "$2a$12$uEt6pc7OUM8V7D0r1.SIkebFHfGyL9HCFrmdM3NohE3mG8bL9d7cy"], ["created_at", "2019-09-17 13:32:01.854259"], ["updated_at", "2019-09-17 13:32:01.854259"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 201 Created in 352ms (Views: 1.5ms | ActiveRecord: 40.4ms | Allocations: 4343)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:32:01 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (6.8ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 16ms (Views: 6.4ms | ActiveRecord: 6.8ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:32:07 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 1.5ms | Allocations: 1609)
+
+
+Started POST "/api/events.json" for ::1 at 2019-09-17 09:32:54 -0400
+Processing by Api::EventsController#create as JSON
+  Parameters: {"event_type"=>"THing", "event_date"=>"2019-09-27", "title"=>"THis is my event", "speaker"=>"Me", "host"=>"Me", "published"=>true, "event"=>{"event_type"=>"THing", "event_date"=>"2019-09-27", "title"=>"THis is my event", "speaker"=>"Me", "host"=>"Me", "published"=>true}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:15:in `create'
+  [1m[36mEvent Create (43.6ms)[0m  [1m[32mINSERT INTO "events" ("event_type", "event_date", "title", "speaker", "host", "published", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["event_type", "THing"], ["event_date", "2019-09-27"], ["title", "THis is my event"], ["speaker", "Me"], ["host", "Me"], ["published", true], ["created_at", "2019-09-17 13:32:54.282827"], ["updated_at", "2019-09-17 13:32:54.282827"]]
+  ↳ app/controllers/api/events_controller.rb:15:in `create'
+  [1m[35m (41.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/events_controller.rb:15:in `create'
+Completed 201 Created in 134ms (Views: 38.0ms | ActiveRecord: 85.5ms | Allocations: 4483)
+
+
+Started DELETE "/api/events/13.json" for ::1 at 2019-09-17 09:33:03 -0400
+Processing by Api::EventsController#destroy as JSON
+  Parameters: {"id"=>"13"}
+  [1m[36mEvent Load (1.7ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:19:in `destroy'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:19:in `destroy'
+  [1m[36mEvent Destroy (50.0ms)[0m  [1m[31mDELETE FROM "events" WHERE "events"."id" = $1[0m  [["id", 13]]
+  ↳ app/controllers/api/events_controller.rb:19:in `destroy'
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/events_controller.rb:19:in `destroy'
+Completed 204 No Content in 120ms (ActiveRecord: 56.8ms | Allocations: 2421)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:33:05 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 1.0ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:33:05 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (7.6ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 14ms (Views: 5.4ms | ActiveRecord: 7.6ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:33:06 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (1.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 1.0ms | Allocations: 1609)
+
+
+Started PUT "/api/events/12.json" for ::1 at 2019-09-17 09:33:09 -0400
+Processing by Api::EventsController#update as JSON
+  Parameters: {"id"=>"12", "event_type"=>"Hackathon2", "event_date"=>"2019-09-04", "title"=>"The best place", "speaker"=>"John Mayer", "host"=>"Dan Stevens", "published"=>true, "created_at"=>"2019-09-17T06:49:57.446Z", "updated_at"=>"2019-09-17T06:49:57.446Z", "event"=>{"id"=>"12", "event_type"=>"Hackathon2", "event_date"=>"2019-09-04", "title"=>"The best place", "speaker"=>"John Mayer", "host"=>"Dan Stevens", "published"=>true, "created_at"=>"2019-09-17T06:49:57.446Z", "updated_at"=>"2019-09-17T06:49:57.446Z"}}
+  [1m[36mEvent Load (1.2ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:23:in `update'
+[31mUnpermitted parameters: :created_at, :updated_at[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:24:in `update'
+  [1m[36mEvent Update (43.4ms)[0m  [1m[33mUPDATE "events" SET "event_type" = $1, "updated_at" = $2 WHERE "events"."id" = $3[0m  [["event_type", "Hackathon2"], ["updated_at", "2019-09-17 13:33:09.776338"], ["id", 12]]
+  ↳ app/controllers/api/events_controller.rb:24:in `update'
+  [1m[35m (2.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/events_controller.rb:24:in `update'
+Completed 204 No Content in 62ms (ActiveRecord: 47.3ms | Allocations: 2911)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:33:12 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (13.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 18ms (Views: 4.7ms | ActiveRecord: 13.0ms | Allocations: 1609)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:33:20 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (11.0ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 16ms (Views: 4.9ms | ActiveRecord: 11.0ms | Allocations: 1609)
+
+
+Started PUT "/api/events/12.json" for ::1 at 2019-09-17 09:33:22 -0400
+Processing by Api::EventsController#update as JSON
+  Parameters: {"id"=>"12", "event_type"=>"Hackathon", "event_date"=>"2019-09-04", "title"=>"The best place", "speaker"=>"John Mayer", "host"=>"Dan Stevens", "published"=>true, "created_at"=>"2019-09-17T06:49:57.446Z", "updated_at"=>"2019-09-17T13:33:09.776Z", "event"=>{"id"=>"12", "event_type"=>"Hackathon", "event_date"=>"2019-09-04", "title"=>"The best place", "speaker"=>"John Mayer", "host"=>"Dan Stevens", "published"=>true, "created_at"=>"2019-09-17T06:49:57.446Z", "updated_at"=>"2019-09-17T13:33:09.776Z"}}
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:23:in `update'
+[31mUnpermitted parameters: :created_at, :updated_at[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:24:in `update'
+  [1m[36mEvent Update (4.2ms)[0m  [1m[33mUPDATE "events" SET "event_type" = $1, "updated_at" = $2 WHERE "events"."id" = $3[0m  [["event_type", "Hackathon"], ["updated_at", "2019-09-17 13:33:22.664708"], ["id", 12]]
+  ↳ app/controllers/api/events_controller.rb:24:in `update'
+  [1m[35m (40.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/events_controller.rb:24:in `update'
+Completed 204 No Content in 56ms (ActiveRecord: 45.9ms | Allocations: 2873)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 09:33:24 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.7ms | Allocations: 1609)
+
+

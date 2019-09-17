@@ -100,6 +100,7 @@ class App extends Component {
             handleChange={this.authHandleChange}
             formData={this.state.authFormData} />)} />
         <Route exact path="/events/:id" component={Editor} />
+        <Route exact path="/events/:id/edit" component={Editor} />
         <Route exact path="/events" component={Editor} />
 
       </div>
