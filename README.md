@@ -15,5 +15,7 @@ This is a full-stack CRUD app with authentication using React.js and Ruby on Rai
 - React.js, Ruby, Rails, JavaScript, HTML, CSS/Flexbox/Grid
 
 ### Screenshot: 
+![Screen-shot](client/src/imgs/Screen Shot 2019-09-17 at 11.51.37 AM.png)
+
 
 
