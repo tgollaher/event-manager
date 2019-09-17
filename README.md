@@ -1,24 +1,19 @@
-# README
+# Hack-a-Manager
+http://hack-a-manager.surge.sh/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Hack-a-Manager
 
-Things you may want to cover:
+### Description:
 
-* Ruby version
+This is a full-stack CRUD app with authentication using React.js and Ruby on Rails. It allows users you to create, update and delete events that they would be interested in attending in their city. 
 
-* System dependencies
+##### What you can do:
+1. Become a user and create and manage as many events as you want!
+2. Create, Read, Update and Delete all of your events using this web application
 
-* Configuration
+### Software Used:
+- React.js, Ruby, Rails, JavaScript, HTML, CSS/Flexbox/Grid
 
-* Database creation
+### Screenshot: 
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
