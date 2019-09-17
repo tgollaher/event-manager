@@ -9399,3 +9399,86 @@ Processing by UsersController#create as HTML
 Completed 201 Created in 304ms (Views: 1.1ms | ActiveRecord: 6.2ms | Allocations: 4340)
 
 
+Started POST "/users" for ::1 at 2019-09-17 10:38:52 -0400
+  [1m[35m (44.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"sammy", "email"=>"sammy@mail.com", "password"=>"[FILTERED]"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "sammy"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sammy@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[36mUser Create (43.8ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["username", "sammy"], ["email", "sammy@mail.com"], ["password_digest", "$2a$12$gTdMbvDhM4cLbIvqIQHFde5qp6.VA8xF1YZ7LdFZ694VaszYsooCS"], ["created_at", "2019-09-17 14:38:53.070537"], ["updated_at", "2019-09-17 14:38:53.070537"]]
+  ↳ app/controllers/users_controller.rb:21:in `create'
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:21:in `create'
+Completed 201 Created in 386ms (Views: 3.4ms | ActiveRecord: 57.8ms | Allocations: 9268)
+
+
+Started POST "/auth/login" for ::1 at 2019-09-17 10:39:01 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"sammy", "email"=>"sammy@mail.com", "password"=>"[FILTERED]", "authentication"=>{"username"=>"sammy", "email"=>"sammy@mail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "sammy"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:5:in `login'
+Completed 200 OK in 299ms (Views: 0.2ms | ActiveRecord: 2.3ms | Allocations: 1039)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 10:39:02 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (0.7ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 31ms (Views: 18.9ms | ActiveRecord: 6.3ms | Allocations: 7859)
+
+
+Started POST "/auth/login" for ::1 at 2019-09-17 10:39:08 -0400
+Processing by AuthenticationController#login as HTML
+  Parameters: {"username"=>"sammy", "email"=>"sammy@mail.com", "password"=>"[FILTERED]", "authentication"=>{"username"=>"sammy", "email"=>"sammy@mail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "sammy"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:5:in `login'
+Completed 200 OK in 288ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 783)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 10:39:08 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (13.3ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 21ms (Views: 6.8ms | ActiveRecord: 13.3ms | Allocations: 1981)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 10:39:09 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 1996)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 10:39:11 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (0.4ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.4ms | Allocations: 1996)
+
+
+Started PUT "/api/events/1.json" for ::1 at 2019-09-17 10:39:21 -0400
+Processing by Api::EventsController#update as JSON
+  Parameters: {"id"=>"1", "event_type"=>"Symposium", "event_date"=>"2018-05-01", "title"=>"A Social-Neuroscience Perspective on Empathy", "speaker"=>"Albert von Bezold, Jules Cotard, Marian Diamond", "host"=>"Alcmaeon of Croton", "published"=>false, "created_at"=>"2019-09-17T14:09:41.364Z", "updated_at"=>"2019-09-17T14:09:41.364Z", "event"=>{"id"=>"1", "event_type"=>"Symposium", "event_date"=>"2018-05-01", "title"=>"A Social-Neuroscience Perspective on Empathy", "speaker"=>"Albert von Bezold, Jules Cotard, Marian Diamond", "host"=>"Alcmaeon of Croton", "published"=>false, "created_at"=>"2019-09-17T14:09:41.364Z", "updated_at"=>"2019-09-17T14:09:41.364Z"}}
+  [1m[36mEvent Load (0.5ms)[0m  [1m[34mSELECT "events".* FROM "events" WHERE "events"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/events_controller.rb:23:in `update'
+[31mUnpermitted parameters: :created_at, :updated_at[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/events_controller.rb:24:in `update'
+  [1m[36mEvent Update (42.5ms)[0m  [1m[33mUPDATE "events" SET "published" = $1, "updated_at" = $2 WHERE "events"."id" = $3[0m  [["published", false], ["updated_at", "2019-09-17 14:39:21.492554"], ["id", 1]]
+  ↳ app/controllers/api/events_controller.rb:24:in `update'
+  [1m[35m (41.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/events_controller.rb:24:in `update'
+Completed 204 No Content in 140ms (ActiveRecord: 84.5ms | Allocations: 3052)
+
+
+Started GET "/api/events.json" for ::1 at 2019-09-17 10:39:23 -0400
+Processing by Api::EventsController#index as JSON
+  [1m[36mEvent Load (4.5ms)[0m  [1m[34mSELECT "events".* FROM "events" ORDER BY "events"."event_date" DESC[0m
+  ↳ app/controllers/api/events_controller.rb:7:in `index'
+Completed 200 OK in 11ms (Views: 5.6ms | ActiveRecord: 4.5ms | Allocations: 1977)
+
+
