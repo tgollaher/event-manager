@@ -45,7 +45,7 @@ class App extends Component {
   handleRegister = async (e) => {
     e.preventDefault();
     await registerUser(this.state.authFormData);
-    await this.props.history.push('/events')
+    await this.props.history.push('/')
   }
 
   handleLogout = async () => {
