@@ -45,7 +45,7 @@ class App extends Component {
   handleRegister = async (e) => {
     e.preventDefault();
     await registerUser(this.state.authFormData);
-    await this.props.history.push('/events')
+    await this.props.history.push('/')
   }
 
   handleLogout = async () => {
@@ -78,17 +78,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        {/* <div>
-            {this.state.currentUser
-              ?
-              <>
-                <p>{this.state.currentUser.username}</p>
-                <button onClick={this.handleLogout}>Logout</button>
-              </>
-              :
-              <button onClick={this.handleLoginButton}>Login / Register</button>
-            }
-          </div> */}
+      
         <Route exact path="/" render={() => (
           <Login
             handleLogin={this.handleLogin}

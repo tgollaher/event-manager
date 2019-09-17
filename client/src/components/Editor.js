@@ -19,7 +19,7 @@ class Editor extends React.Component {
     this.addEvent = this.addEvent.bind(this);
     this.updateEvent = this.updateEvent.bind(this);
     this.deleteEvent = this.deleteEvent.bind(this);
-    
+
   }
 
   componentDidMount() {
@@ -27,7 +27,7 @@ class Editor extends React.Component {
       .get('http://localhost:3000/api/events.json')
       .then(response => this.setState({ events: response.data }))
       .catch((error) => {
-          throw error
+        throw error
       });
   }
 
@@ -46,6 +46,11 @@ class Editor extends React.Component {
       .catch((error) => {
         throw error
       });
+  }
+
+  handleLogout = async () => {
+    localStorage.removeItem("authToken");
+    this.props.history.push('/')
   }
 
   updateEvent(updatedEvent) {
@@ -86,7 +91,7 @@ class Editor extends React.Component {
     }
   }
 
- 
+
   render() {
     const { events } = this.state;
     if (events === null) return null;
@@ -98,12 +103,15 @@ class Editor extends React.Component {
     return (
       <div>
         <Header />
+        {
+          localStorage.getItem('authToken') ? <button onClick={this.handleLogout}>LogOut</button> : ''
+        }
         <div className="grid">
           <EventList events={events} activeId={Number(eventId)} />
           <Switch>
-            <PropsRoute path="/events/new" 
-            component={EventForm} 
-            onSubmit={this.addEvent} 
+            <PropsRoute path="/events/new"
+              component={EventForm}
+              onSubmit={this.addEvent}
             />
             <PropsRoute
               exact
@@ -111,13 +119,13 @@ class Editor extends React.Component {
               component={EventForm}
               event={event}
               onSubmit={this.updateEvent}
-            />  
-            <PropsRoute 
-            path="/events/:id" 
-            component={Event} 
-            event={event}
-            onDelete={this.deleteEvent}
-            /> 
+            />
+            <PropsRoute
+              path="/events/:id"
+              component={Event}
+              event={event}
+              onDelete={this.deleteEvent}
+            />
           </Switch>
         </div>
       </div>
